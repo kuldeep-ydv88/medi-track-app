@@ -51,12 +51,10 @@ npx expo start
 
 ## 📸 Screenshots
 
-####  🏠 Home Screen
+#### 🏠 Home Screen
 
-![Image](https://github.com/user-attachments/assets/76f93f30-91de-4117-ba0f-e5b615266b97)
+<img src="https://github.com/user-attachments/assets/76f93f30-91de-4117-ba0f-e5b615266b97" width="250">
 
+<img src="https://github.com/user-attachments/assets/9262c9c7-5073-4ee6-92f6-363e267e8f6d" width="250">
 
-![Image](https://github.com/user-attachments/assets/9262c9c7-5073-4ee6-92f6-363e267e8f6d)
-
-
-![Image](https://github.com/user-attachments/assets/66f84a87-10a3-4990-a7cc-dee8d24ec4e1)
+<img src="https://github.com/user-attachments/assets/66f84a87-10a3-4990-a7cc-dee8d24ec4e1" width="250">
