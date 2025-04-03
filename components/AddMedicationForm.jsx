@@ -5,7 +5,7 @@ import color from '../constant/color';
 import { TypeList, WhenToTake } from '../constant/Options';
 import { Picker } from '@react-native-picker/picker';
 import RNDateTimePicker from '@react-native-community/datetimepicker';
-import { FormatDate, formatDateForText, formatTime, getDatesRanges } from '../service/ConvertDateTime';
+import { formatDateForText, formatTime, getDatesRanges } from '../service/ConvertDateTime';
 import { getLocalStorage } from '../service/Storage';
 import { doc, setDoc } from 'firebase/firestore';
 import { db } from '../config/FirebaseConfig';
@@ -37,7 +37,6 @@ export default function AddMedicationForm() {
             return;
         }
         const dates = getDatesRanges(formData?.startDate, formData?.endDate);
-        console.log(dates)
         setLoading(true)
         try {
             await setDoc(doc(db, 'medication', docId), {
@@ -46,7 +45,6 @@ export default function AddMedicationForm() {
                 docId: docId,
                 dates: dates
             });
-            console.log("Data saved")
             Alert.alert('Great!', 'New Medication added successfully', [
                 {
                     text: 'Ok',
